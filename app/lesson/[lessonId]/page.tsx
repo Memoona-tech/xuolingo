@@ -3,14 +3,15 @@ import { redirect } from "next/navigation";
 import { Quiz } from "../quiz";
 
 interface Props {
-  params: {
-    lessonId: string; // Changed from number to string
-  }
+  params: Promise<{ lessonId: string }>;
 }
 
 const LessonIdPage = async ({ params }: Props) => {
-  // Convert lessonId to number for your queries if needed.
-  const lessonData = getLesson(Number(params.lessonId));
+  // Await the params Promise to extract the lessonId.
+  const { lessonId } = await params;
+
+  // Convert lessonId to number for your query if needed.
+  const lessonData = getLesson(Number(lessonId));
   const userProgressData = getUserProgress();
   const userSubscriptionData = getUserSubscription();
 
