@@ -27,15 +27,18 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-    <html lang="en">
-      <body className={`${quicksand.variable} antialiased`}>
-        <Toaster/>
-        <ExitModal/>
-        <HeartsModal/>
-        <PracticeModal/>
-        {children}
-      </body>
-    </html>
+      <html lang="en">
+        <head>
+          <link rel="icon" href="mascot.svg"/>
+        </head>
+        <body className={`${quicksand.variable} antialiased`}>
+          <Toaster />
+          <ExitModal />
+          <HeartsModal />
+          <PracticeModal />
+          {children}
+        </body>
+      </html>
     </ClerkProvider>
   );
 }
