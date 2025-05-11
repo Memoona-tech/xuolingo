@@ -21,7 +21,7 @@ export const Sidebar = ({className}:SidebarProps) => {
         <Link href="/learn">
             <div className='pt-8 pl-4 pb-7 flex items-center gap-x-3 '>
                 <Image src="/mascot.svg" width={40} height={40} alt='mascot'/>
-                <h1 className='text-2xl font-extrabold text-green-600 tracking-wide'>Duolingo</h1>
+                <h1 className='text-2xl font-extrabold text-green-600 tracking-wide'>Xuolingo</h1>
             </div>
         </Link>
 
