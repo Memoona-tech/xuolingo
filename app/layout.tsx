@@ -16,7 +16,7 @@ const quicksand = Quicksand({
 });
 
 export const metadata: Metadata = {
-  title: "Duolingo Clone",
+  title: "Xuolingo Clone",
   description: "By Memoona",
 };
 
