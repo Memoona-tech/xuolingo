@@ -23,7 +23,7 @@ export default function Custom404() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-         We are lost now.
+         We are lost 😭.
       </motion.p>
       <motion.div
         initial={{ y: 20, opacity: 0 }}
