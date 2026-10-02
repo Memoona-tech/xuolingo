@@ -6,9 +6,8 @@ export default {
     out: "./drizzle",
     dialect: "postgresql", // I replaced "driver" : "pg"
     dbCredentials: {
-        url: process.env.DATABASE_URL!,
+        url: process.env.DIRECT_URL || process.env.DATABASE_URL!,
     },
 } satisfies Config;
-
 
 
